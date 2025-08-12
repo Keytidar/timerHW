@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer_body">
+      <div class="timer_circle">
+        <form id="timer-form" action="" class="timer_inputs">
+          <div class="input_wrapper"><input type="text" maxlength="2" id="hours" placeholder="00" /></div>
+          <div class="input_wrapper"><input type="text" maxlength="2" id="minutes" placeholder="00" /></div>
+          <div class="input_wrapper"><input type="text" maxlength="2" id="seconds" placeholder="00"/></div>
+        </form>
+      </div>
+      <button class="play_button" form="timer-form" id="play-button">
+        <div class="botón" id="toActivate">
+          <div class="fondo" x="0" y="0" width="200" height="200"></div>
+          <div class="icono" width="200" height="200">
+            <div
+              class="parte izquierda"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+              fill="#fff"
+            ></div>
+            <div
+              class="parte derecha"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+              fill="#fff"
+            ></div>
+          </div>
+          <div class="puntero"></div>
+        </div>
+      </button>
+    </div>
+  </body>
+</html>
