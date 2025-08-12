@@ -19,7 +19,7 @@ const functionsCustom = {
 }
 
 
-let pipe = new Audio('audio\\pipe.mp3')
+let pipe = new Audio('audio/pipe.mp3')
 let timerInterval;
 let totalSeconds = 0;
 
