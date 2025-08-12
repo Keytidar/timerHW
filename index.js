@@ -18,6 +18,8 @@ const functionsCustom = {
   }
 }
 
+
+let pipe = new Audio('audio\\pipe.mp3')
 let timerInterval;
 let totalSeconds = 0;
 
@@ -49,6 +51,7 @@ timerButton.addEventListener('click', (event) => {
       if (totalSeconds < 1) {
         clearInterval(timerInterval);
         timerInterval = 0;
+        pipe.play();
         toActivate.classList.remove('active');
         totalSeconds = 0;
         return;
